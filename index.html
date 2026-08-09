@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  
+  <!-- CSS Styles -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Main Weather Dashboard Card -->
+  <div class="weather-card">
+    <h2>🌦️ Weather App</h2>
+    
+    <!-- 1. Search Box -->
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Enter city name..." />
+      <button id="search-btn">Search</button>
+    </div>
+
+    <!-- 2. Loading Indicator -->
+    <div id="loading" class="hidden">Loading weather data... ⏳</div>
+
+    <!-- 3. Error Message -->
+    <div id="error-msg" class="hidden error"></div>
+
+    <!-- 4. Weather Content -->
+    <div id="weather-info" class="hidden">
+      <h3 id="city-name">--</h3>
+      <div class="temp-box">
+        <span id="temperature">--</span>°C
+      </div>
+      <p id="condition">--</p>
+
+      <div class="details-grid">
+        <div class="detail-item">
+          <span>💧 Humidity</span>
+          <strong id="humidity">--%</strong>
+        </div>
+        <div class="detail-item">
+          <span>💨 Wind Speed</span>
+          <strong id="wind-speed">-- km/h</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
